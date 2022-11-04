@@ -1,0 +1,308 @@
+<!--
+    Forms
+    Stacked Form
+All textual <input> and  <textarea> elements with class .form-control get proper form styling
+-->
+<!-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Stacked form</h2>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+      we add a .form-label class to each label element to ensure correct padding.
+Checkboxes have different markup. They are wrapped around a container element with .form-check,
+ and labels have a class of .form-check-label, while checkboxes and radio buttons use .form-check-input.
+
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Textarea</h2>
+  <p>Use the .form-control class to style textareas as well:</p>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+    Form Row/Grid (Inline Forms)
+    If you want your form elements to appear side by side, use .row and .col
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Inline Forms</h2>
+  <p>If you want your form elements to appear side by side, use .row and .col:</p>
+  <form>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Enter email" name="email">
+      </div>
+      <div class="col">
+        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+    Form Control Size
+   You can change the size of .form-control inputs with .form-control-lg or .form-control-sm 
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Form Control Size</h2>
+  <p>You can change the size of .form-control inputs with .form-control-lg or .form-control-sm:</p>
+  <form>
+    <input type="text" class="form-control form-control-lg" placeholder="Large input">
+    <input type="text" class="form-control mt-3" placeholder="Normal input">
+    <input type="text" class="form-control form-control-sm mt-3" placeholder="Small input">
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+    Disabled and Readonly
+    Use the disabled and/or readonly attributes to disable the input field
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Disabled and Readonly</h2>
+  <p>Use the disabled and/or readonly attributes to disable the input field:</p>
+  <form>
+    <input type="text" class="form-control" placeholder="Normal input">
+    <input type="text" class="form-control mt-3" placeholder="Disabled input" disabled>
+    <input type="text" class="form-control mt-3" placeholder="Readonly input" readonly>
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+    Plain text Inputs
+    Use the .form-control-plaintext class to style an input field without borders, but keep proper marigins and padding:
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Plaintext</h2>
+  <p>Use the .form-control-plaintext class to style an input field without borders, but with correct marigins and padding:</p>
+  <form>
+    <input type="text" class="form-control-plaintext" placeholder="Plaintext input">
+    <input type="text" class="form-control mt-3" placeholder="Normal input">
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+    Color Picker
+    To style an input with type="color" properly, use the .form-control-color class
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Color Picker</h2>
+  <p>To style an input with type="color" properly, use the .form-control-color class:</p>
+  <form>
+    <label for="myColor" class="form-label">Color picker</label>
+    <input type="color" class="form-control form-control-color" id="myColor" value="#CCAACC" title="Choose a color">
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+    Checkboxes
+Checkboxes are used if you want the user to select any number of options from a list of preset options
+To style checkboxes, use a wrapper element with class="form-check" to ensure proper margins for labels and checkboxes.
+
+Then, add the .form-check-label class to label elements, and .form-check-input to style checkboxes properly inside the .form-check container.
+
+Use the checked attribute if you want the checkbox to be checked by default
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Checkboxes</h2>
+  <p>To style a checkbox, use a container element with a .form-check class, and add .form-check-label to labels, and .form-check-input to the input with type="checkbox".</p>
+  <p>The form below contains three checkboxes. The first option is checked by default, and the last option is disabled:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+      <label class="form-check-label" for="check1">Option 1</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+      <label class="form-check-label" for="check2">Option 2</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" disabled>
+      <label class="form-check-label">Option 3</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+-->
+<!--
+    Radio buttons
+Radio buttons are used if you want to limit the user to just one selection from a list of preset options.
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Radio buttons</h2>
+  <p>The form below contains three radio buttons. The first option is checked by default, and the last option is disabled:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+      <label class="form-check-label" for="radio1">Option 1</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+      <label class="form-check-label" for="radio2">Option 2</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" disabled>
+      <label class="form-check-label">Option 3</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+-->
+
+
+
